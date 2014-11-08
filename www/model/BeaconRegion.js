@@ -44,8 +44,9 @@ var BeaconRegion = Region.extend(function(identifier, uuid, major, minor, notify
 	BeaconRegion.checkUuid(uuid);
 	BeaconRegion.checkMajorOrMinor(major);
 	BeaconRegion.checkMajorOrMinor(minor);
-
-	this.uuid = uuid;
+	
+    this.identifier = identifier;
+    this.uuid = uuid;
     this.major = major;
     this.minor = minor;
     
